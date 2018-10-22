@@ -18,7 +18,8 @@
         },
         "char":{
             "size": "25px",
-            "titleSize": "50px"
+            "titleSize": "50px",
+            "size2": "15px"
         }
     },
     "call": {
@@ -31,7 +32,7 @@
     "size": {
         "header": {
             "height": "400px",
-            "line": "140px"
+            "line": "150px"
         }
     }
 }

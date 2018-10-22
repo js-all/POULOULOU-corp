@@ -52,7 +52,7 @@ function panel1() {
         } else {
             sp = bs;
             let ool = Math.floor(Math.random() * 2) == 0;
-            let rand = Math.floor(Math.random() * (150+1));
+            let rand = Math.floor(Math.random() * (100+1));
             if (ool) {
                 sp += rand;
             } else {

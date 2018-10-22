@@ -20,6 +20,7 @@ function v() {
     `--window-height: ${window.innerHeight}px;`+
     `--window-width-5: ${window.innerWidth / 5}px;`+
     `--window-height-2: ${window.innerHeight / 2}px;`+
+    `--data-size-cont-height: ${(window.innerHeight - parseInt(data.size.header.height))}px;`+
     dataToCssVar();
 }
 v();
