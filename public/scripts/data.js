@@ -1,6 +1,6 @@
 var data;
 let dataXHR = new XMLHttpRequest();
-dataXHR.open('GET', '../json/data.json');
+dataXHR.open('GET', '../data/data.json');
 dataXHR.responseType = 'json';
 let d;
 dataXHR.onloadstart = function() {
