@@ -18,6 +18,7 @@ function setEl() {
         }
         xhr.onloadend = function() {
             console.log('all data load in %sms',(new Date().getTime()-d.getTime()));
+            ttte();
         }
         xhr.send();
     } else if (pannel == 1) {
