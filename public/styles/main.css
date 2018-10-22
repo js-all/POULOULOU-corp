@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
 .cc {
     height: var(--window-height);
     background-color: var(--data-color-bg-load);
     width: var(--window-width-5);
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
 }
 #cp1 {
     font-size: var(--data-string-char-size);
@@ -13,27 +16,20 @@
     position: absolute;
     top:0;
     left:0;
+    color: var(--data-color-text-load);
 }
-#thum {
-    display: block;
-    height: var(--data-string-char-size);
-    width:2px;
-    background-color: var(--data-color-bg-thum);
-    animation-name: thumA;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    position: relative;
-    top:-31px;
-    
+#pppcc3 {
+    text-align: center;
+    margin-top: var(--window-height-2);
 }
-@keyframes thumA {
-    0%, 50% {
-        visibility: visible;
-    }   
-    50.01%, 100% {
-        visibility: hidden;
+@keyframes ccA {
+    from {
+        height:var(--window-height);
     }
-    body {
-        font-family: 'Montserrat', sans-serif;
+    to {
+        height:0;
     }
+}
+body {
+    font-family: 'Montserrat', sans-serif;
 }

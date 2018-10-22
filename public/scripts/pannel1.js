@@ -34,9 +34,10 @@ function ttte() {
         CHRU.push(i.toUpperCase());
     }
     console.log(CENTER)
-    function text(ff, sp, bs, f, n) {
+    function text(ff, sp, bs, f, n, ca) {
         const p = document.getElementById('pppcc3');
         if (f) {
+            ca();
             return;
         }
         if (!ff) {
@@ -62,7 +63,16 @@ function ttte() {
                 f = true;
             }
         }
-        setTimeout(text, sp, ff, sp, bs, f, n);
+        setTimeout(text, sp, ff, sp, bs, f, n, ca);
     }
-    text(false, 1, 200, false, 0);
+    text(false, 1, 200, false, 0, () => {
+        for (let i of ROWS) {
+            i.style.animationName = 'ccA';
+        }
+    });
+    for (let i = 0; i < ROWS.length; i++) {
+        const e = ROWS[i];
+        const delay = (ROWS.length*250)-(250*i);
+        e.style.animationDelay = delay+'ms';
+    }
 }

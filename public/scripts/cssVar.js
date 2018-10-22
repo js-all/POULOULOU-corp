@@ -19,6 +19,7 @@ function v() {
     `--window-width: ${window.innerWidth}px;`+
     `--window-height: ${window.innerHeight}px;`+
     `--window-width-5: ${window.innerWidth / 5}px;`+
+    `--window-height-2: ${window.innerHeight / 2}px;`+
     dataToCssVar();
 }
 v();
