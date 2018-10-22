@@ -8,6 +8,7 @@
     animation-timing-function: ease-in-out;
 }
 #cp1 {
+    z-index: 100;
     font-size: var(--data-string-char-size);
     display: flex;
     width: var(--window-width);
@@ -32,4 +33,43 @@
 }
 body {
     font-family: 'Montserrat', sans-serif;
+}
+header {
+    width: var(--window-width);
+    height: var(--data-size-header-height);
+    background-image: url('../images/bubles.png');
+    position: relative;
+    top:-8px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+    filter: brightness(0.8) grayscale(100%);
+    overflow: hidden;
+    left:-8px;
+    z-index: 6;
+}
+#title {
+    width: var(--window-width);
+    height:50px;
+    position: absolute;
+    filter:brightness(0) saturate(100%)  invert(45%) sepia(93%) saturate(2505%) hue-rotate(360deg) brightness(100%) contrast(107%);
+    top: var(--data-size-header-line);
+    left:0;
+    color: var(--data-color-bg-load);
+    font-size: var(--data-string-char-titleSize);
+    text-align: center;
+}
+.g {
+    background-color: rgb(190, 190, 190);
+}
+.w {
+    background-color: white;
+}
+.o {
+    background-color: var(--data-color-bg-load);
+}
+.box {
+    /*width: var(--window-width);*/
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

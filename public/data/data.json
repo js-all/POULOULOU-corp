@@ -5,7 +5,8 @@
             "thum": [0, 100, 200]
         },
         "text": {
-            "load": [255, 255, 255]
+            "load": [255, 255, 255],
+            "title": [0, 0, 0]
         }
     },
     "string": {
@@ -16,14 +17,21 @@
             "title": "POULOULOU corp"
         },
         "char":{
-            "size": "15px"
+            "size": "25px",
+            "titleSize": "50px"
         }
     },
     "call": {
         "src":[
             "cssVar",
             "main",
-            "pannel1"
+            "pannels"
         ]
+    },
+    "size": {
+        "header": {
+            "height": "400px",
+            "line": "140px"
+        }
     }
 }

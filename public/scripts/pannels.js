@@ -1,4 +1,4 @@
-function ttte() {
+function panel1() {
     const ROWS = document.getElementsByClassName('cc');
     const CENTER = ROWS[Math.floor(ROWS.length/2)];
     const CHR = [
@@ -37,14 +37,14 @@ function ttte() {
     function text(ff, sp, bs, f, n, ca) {
         const p = document.getElementById('pppcc3');
         if (f) {
-            ca();
+            setTimeout(ca,200);
             return;
         }
         if (!ff) {
-            if (sp < 320) {
+            if (sp <230) {
                 p.innerHTML = CHRU[n];;
                 n = n == CHRU.length-1 ? 0 : n+1;
-                sp += sp/20;
+                sp += sp/12 ;
             } else {
                 p.innerHTML = data.string.load.word.substring(0,1).toUpperCase();
                 ff = true;
@@ -66,13 +66,23 @@ function ttte() {
         setTimeout(text, sp, ff, sp, bs, f, n, ca);
     }
     text(false, 1, 200, false, 0, () => {
+        pannel = 1;
+            setEl();
         for (let i of ROWS) {
             i.style.animationName = 'ccA';
         }
+        setTimeout(() => {
+            document.getElementById('cp1').remove();
+            
+        },(150*ROWS.length)+(1000));
     });
     for (let i = 0; i < ROWS.length; i++) {
         const e = ROWS[i];
-        const delay = (ROWS.length*250)-(250*i);
+        const delay = (ROWS.length*150)-(150*i);
         e.style.animationDelay = delay+'ms';
     }
+}
+
+function panel2() {
+
 }
