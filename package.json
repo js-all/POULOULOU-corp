@@ -1,0 +1,27 @@
+{
+  "name": "pouloulou-corp",
+  "version": "1.0.0",
+  "description": "the pouloulou corp's website",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/js-all/POULOULOU-corp.git"
+  },
+  "keywords": [
+    "Pcorp"
+  ],
+  "author": "GOULOIS titouan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/js-all/POULOULOU-corp/issues"
+  },
+  "homepage": "https://github.com/js-all/POULOULOU-corp#readme"
+}
