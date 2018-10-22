@@ -1,0 +1,10 @@
+.cc {
+    height: var(--window-height);
+    background-color: var(--data-color-bg-load);
+}
+#cp1 {
+    display: flex;
+    width: var(--window-width);
+    height: var(--window-height);
+    flex-direction: column;
+}

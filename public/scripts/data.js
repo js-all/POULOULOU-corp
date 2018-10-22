@@ -13,10 +13,10 @@ dataXHR.onload = function() {
             const e = data.color[i];
             for (let j in e) {
                 const el = e[j];
-                e[j] = new rgb(el[0], el[1], el[2]);
+                e[j] = new rgb(el[0], el[1], el[2]).get();
             }
         }
     }
 }
-dataXHR.onloadend = function() {console.log('data load finish in %sms',(new Date().getTime()-d.getTime()))}
+dataXHR.onloadend = function() {console.log('data load finish in %sms',(new Date().getTime()-d.getTime()));call()}
 dataXHR.send();
