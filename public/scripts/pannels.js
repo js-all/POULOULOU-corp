@@ -33,7 +33,7 @@ function panel1() {
     for (let i of CHR) {
         CHRU.push(i.toUpperCase());
     }
-    console.log(CENTER)
+
     function text(ff, sp, bs, f, n, ca) {
         const p = document.getElementById('pppcc3');
         if (f) {
@@ -84,5 +84,7 @@ function panel1() {
 }
 
 function panel2() {
-
+    document.getElementById('title').addEventListener('click', () => {
+        location.href = '/';
+    })
 }
