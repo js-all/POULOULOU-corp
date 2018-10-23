@@ -18,5 +18,5 @@ dataXHR.onload = function() {
         }
     }
 }
-dataXHR.onloadend = function() {console.log('data load finish in %sms',(new Date().getTime()-d.getTime()));call()}
+dataXHR.onloadend = function() {console.log('%cdata load finish in %c%sms','color:blue','color:green',(new Date().getTime()-d.getTime()));call()}
 dataXHR.send();
