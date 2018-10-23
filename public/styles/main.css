@@ -35,7 +35,7 @@
 body {
     box-sizing: border-box;
     background-attachment: fixed;
-    background-image: url('../images/bublesPATERN_ORANGE.png');
+    background-image: url('../images/bubles/bublesPATERN_ORANGE.png');
     background-size:400px;
     background-repeat: repeat-y;
     background-position-x: 100%;
