@@ -17,7 +17,7 @@ function setEl() {
             }
         }
         xhr.onloadend = function() {
-            console.log('%call data load in %c%sms','color:red','color:green',(new Date().getTime()-d.getTime()));
+            console.log('%call data load finish in %c%sms','color:red','color:green',(new Date().getTime()-d.getTime()));
             panel1();
         }
         xhr.send();
