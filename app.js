@@ -11,5 +11,5 @@ app.get('/',(req, res) => {
 
 app.listen(4000);
 function dir(path) {
-    return __dirname + '/'+path;
+    return `${__dirname}/${path}`;
 }
