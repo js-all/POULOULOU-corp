@@ -33,7 +33,7 @@ function panel1() {
     for (let i of CHR) {
         CHRU.push(i.toUpperCase());
     }
-
+    var style = document.createEl("style",{},document.head);
     function text(ff, sp, bs, f, n, ca) {
         const p = document.getElementById('pppcc3');
         if (f) {
@@ -48,6 +48,7 @@ function panel1() {
             } else {
                 p.innerHTML = data.string.load.word.substring(0,1).toUpperCase();
                 ff = true;
+                style.innerHTML = "#pppcc3::after{display: inline}";
             }
         } else {
             sp = bs;
@@ -68,6 +69,7 @@ function panel1() {
     text(false, 1, 200, false, 0, () => {
         pannel = 1;
             setEl();
+            style.remove();
         for (let i of ROWS) {
             i.style.animationName = 'ccA';
         }

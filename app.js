@@ -9,7 +9,7 @@ app.get('/',(req, res) => {
     res.sendFile(dir('public/index.html'), {root:dir('public')});
 });
 
-app.listen(4000);
+app.listen(4000, '127.0.0.1');
 function dir(path) {
     return `${__dirname}/${path}`;
 }

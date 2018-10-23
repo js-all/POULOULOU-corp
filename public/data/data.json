@@ -2,7 +2,7 @@
     "color": {
         "bg": {
             "load": [255, 100, 0],
-            "thum": [0, 100, 200]
+            "thum": [255, 255, 255]
         },
         "text": {
             "load": [255, 255, 255],
@@ -20,7 +20,9 @@
             "size": "25px",
             "titleSize": "50px",
             "titleSize2": "40px",
-            "size2": "15px"
+            "size2": "15px",
+            "thum": "15px",
+            "thum2": "5px"
         }
     },
     "call": {

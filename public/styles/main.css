@@ -21,8 +21,35 @@
     color: var(--data-color-text-load);
 }
 #pppcc3 {
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    top: var(--window-height-2);
     text-align: center;
-    margin-top: var(--window-height-2);
+    width: var(--window-width-5);
+}
+#pppcc3::after {
+    content: ":";
+    position: relative;
+    top:-3px;
+    left:2px;
+    display: none;
+    font-size: var(--data-string-char-thum);
+    color: var(--data-color-bg-thum);
+    background-color: var(--data-color-bg-thum);
+    animation-name: thum;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    z-index: 5;
+}
+
+@keyframes thum {
+    0%, 50% {
+        visibility: visible;
+    }
+    50%, 100% {
+        visibility: hidden;
+    }
 }
 @keyframes ccA {
     from {
