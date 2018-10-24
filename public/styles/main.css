@@ -94,6 +94,7 @@ body {
     justify-content: space-around;
 }
 header {
+    background-color: rgba(0,0,0,0.0);
     box-shadow: 0 0 10px 10px black;
     width: var(--window-width);
     height: var(--data-size-header-height);    
@@ -107,7 +108,7 @@ header {
     position: absolute;
     top: var(--data-size-header-line);
     left:0;
-    color: var(--data-color-string-title);
+    color: var(--data-color-text-title);
     font-size: var(--data-string-char-titleSize);
     text-align: center;
 }
@@ -126,9 +127,26 @@ header {
 }
 .box {
     width: var(--window-width);
-
     padding-top: 20px;
     padding-bottom: 20px;
+}
+#top-header {
+    justify-content: flex-end;
+    flex-direction: row;
+    display: flex;
+    width: var(--window-width);
+    position: absolute;
+    top:0;
+    left:0;
+    height:50px;
+}
+#menuB {
+    margin-right: 30px;
+    font-size: 35px;
+    cursor: pointer;
+}
+#menuB:hover {
+    color: var(--data-color-bg-load);
 }
 
 @media screen and (max-width:720px) {
@@ -138,7 +156,9 @@ header {
 }
 
 button {
-    border:black 3px solid;
+    border:3px solid;
+    border-color: var(--data-color-text-title);
+    color: var(--data-color-text-title);
     background-color: transparent;
     border-radius: 50px;
     min-width:30%;
